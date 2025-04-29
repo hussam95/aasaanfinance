@@ -175,7 +175,7 @@ const CategoriesPage = () => {
           currencies like USD/PKR, EUR/USD etc.
           <br />
           <br />
-          We'll teach how Forex works, what affects currency values, and the
+          We will teach how Forex works, what affects currency values, and the
           risks and rewards of engaging in this fast-paced market.
         </Typography>
       </S.SectionWrapper>

@@ -13,7 +13,7 @@ const ContactPage = () => {
           Get In Touch
         </Typography>
         <Typography variant="subtitle1" align="center" sx={{ mt: 2 }}>
-          We'd love to hear from you! Whether you have a question, feedback, or
+          We would love to hear from you! Whether you have a question, feedback, or
           just want to connect — reach out.
         </Typography>
       </S.HeroSection>
@@ -41,7 +41,7 @@ const ContactPage = () => {
         </S.ContactInfo>
 
         <Typography variant="subtitle2" align="center" sx={{ mt: 4 }}>
-          We'll get back to you as soon as possible!
+          We will get back to you as soon as possible!
         </Typography>
       </S.SectionWrapper>
     </S.MainWrapper>

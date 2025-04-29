@@ -19,7 +19,7 @@ const AboutPage = () => {
           Making Investing Simple for Every Pakistani
         </Typography>
         <Typography variant="subtitle1" align="center" sx={{ mt: 2 }}>
-          Because saving alone isn’t enough anymore. It's time to learn smartly,
+          Because saving alone isn’t enough anymore. It is time to learn smartly,
           invest confidently, and grow your future — the easy way.
         </Typography>
       </S.HeroSection>
@@ -33,7 +33,7 @@ const AboutPage = () => {
           Inflation: The Silent Killer
         </Typography>
         <Typography variant="body1" align="center" sx={{ mt: 2 }}>
-          Over the last two years, Pakistan's inflation has surged beyond{" "}
+          Over the last two years, Pakistan&apos;s inflation has surged beyond{" "}
           <b>24% to 29%</b>. Essentials like <b>food</b>, <b>fuel</b>, and{" "}
           <b>healthcare</b> have nearly <b>doubled in price</b>.
           <br />
@@ -60,7 +60,7 @@ const AboutPage = () => {
           <Savings fontSize="large" />
         </S.IconWrapper>
         <Typography variant="h4" align="center">
-          Saving Isn't Saving Anymore
+          Saving Is not Saving Anymore
         </Typography>
         <Typography variant="body1" align="center" sx={{ mt: 2 }}>
           Banks offer <b>10% to 13%</b> annual return on your savings. But when
@@ -75,7 +75,7 @@ const AboutPage = () => {
           <br />
           <br />
           <b>In simple words:</b>
-          Your <b>money grows slower</b> than <b>prices rise</b> — that's why
+          Your <b>money grows slower</b> than <b>prices rise</b> — that is why
           you feel poorer even after saving.
         </Typography>
       </S.SectionWrapper>
@@ -89,7 +89,7 @@ const AboutPage = () => {
           Investing: No Longer Optional
         </Typography>
         <Typography variant="body1" align="center" sx={{ mt: 2 }}>
-          Investing is not about being greedy. It's about{" "}
+          Investing is not about being greedy. It is about{" "}
           <b>protecting yourself</b>. Without investing, your savings can’t even
           keep up with your <b>grocery bills</b>, your{" "}
           <b>children’s education</b>, or your <b>basic healthcare</b>.
@@ -110,7 +110,7 @@ const AboutPage = () => {
         <Typography variant="body1" align="center" sx={{ mt: 2 }}>
           Today, the internet is full of <b>fake promises</b>:
           <br />
-          - "Double your money overnight!" - "Become a millionaire in 6 months!"
+          - Double your money overnight!&quot; - &quot;Become a millionaire in 6 months!&quot;
           <br />
           <br />
           But most of these creators have <b>no real research</b> and{" "}
@@ -149,11 +149,11 @@ const AboutPage = () => {
           We will never tell you to blindly invest somewhere.
           <br />
           <b>We empower you</b> — so you can confidently{" "}
-          <b>choose what's best for your future</b>, whether it’s <b>stocks</b>,{" "}
+          <b>choose what is best for your future</b>, whether it’s <b>stocks</b>,{" "}
           <b>crypto</b>, <b>mutual funds</b> or anything else.
           <br />
           <br />
-          <b>You won't need to depend on anyone else.</b>
+          <b>You will not need to depend on anyone else.</b>
           You will lead your own investment life — with knowledge, with
           confidence, and on your own terms.
         </Typography>
@@ -167,8 +167,8 @@ const AboutPage = () => {
           fontWeight="bold"
           sx={{ lineHeight: 1.5 }}
         >
-          "Making Investing Easy, Understandable, and Achievable for Every
-          Pakistani."
+          &quot;Making Investing Easy, Understandable, and Achievable for Every
+          Pakistani.&quot;
         </Typography>
       </S.MissionSection>
     </S.MainWrapper>

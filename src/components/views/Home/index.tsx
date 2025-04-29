@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, TextField, Button } from "@mui/material";
+import { Typography, TextField } from "@mui/material";
 import * as S from "./styles";
 import { featuredBlogs } from "../Featured";
 import theme from "@/theme";
