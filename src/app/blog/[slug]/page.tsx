@@ -7,14 +7,8 @@ import {
   BlogImage
 } from "@/components/styled/Blog";
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function generateMetadata({ params }: Params) {
-  const { frontmatter } = await getPost(params.slug);
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+    const { frontmatter } = await getPost(params.slug);
   const { title, description } = frontmatter;
 
   return {
@@ -43,8 +37,8 @@ export async function generateMetadata({ params }: Params) {
   };
 }
 
-export default async function BlogPost({ params }: Params) {
-  const { content } = await getPost(params.slug, {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+    const { content } = await getPost(params.slug, {
     BlogContainer,
     Section,
     SectionTitle,
