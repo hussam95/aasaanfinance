@@ -1,11 +1,11 @@
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
 
-export const MainWrapper = styled(Box)(({ theme }) => ({
+export const MainWrapper = styled(Box)({
   display: "flex",
   flexDirection: "column",
   minHeight: "calc(100vh - 64px)",
-}));
+});
 
 export const HeroSection = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -42,17 +42,17 @@ export const SectionWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const ContactInfo = styled(Box)(({ theme }) => ({
+export const ContactInfo = styled(Box)({
   marginTop: "2rem",
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
   // gap: "2rem",
-}));
+});
 
-export const ContactItem = styled(Box)(({ theme }) => ({
+export const ContactItem = styled(Box)({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   padding: "1rem",
-}));
+});

@@ -41,13 +41,13 @@ export const LogoText = styled("div")(({ theme }) => ({
   },
 }));
 
-export const NavMenu = styled(Box)(({ theme }) => ({
+export const NavMenu = styled(Box) ({
   display: "flex",
   gap: "1rem", // Important: smaller gap to fit mobile
   flexWrap: "nowrap",
   justifyContent: "center",
   alignItems: "center",
-}));
+});
 
 export const NavItem = styled("div")(({ theme }) => ({
   cursor: "pointer",

@@ -60,13 +60,13 @@ export const Section = styled(Box)(({ theme }) => ({
 }));
 
 // Cards
-export const CardsContainer = styled(Box)(({ theme }) => ({
+export const CardsContainer = styled(Box)({
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
   gap: "2rem",
   marginTop: "1rem",
-}));
+});
 
 export const Card = styled(Box)(({ theme }) => ({
   flex: "1 1 300px", // responsive width
@@ -87,13 +87,13 @@ export const Card = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const ReadMoreButton = styled(Button)(({ theme }) => ({
+export const ReadMoreButton = styled(Button)({
   transition: "transform 0.3s ease, background-color 0.3s ease",
 
   "&:hover": {
     transform: "scale(1.15)",
   },
-}));
+});
 
 // Categories
 export const CategoriesContainer = styled(Box)(({ theme }) => ({
@@ -156,9 +156,9 @@ export const NewsletterForm = styled(Box)({
   justifyContent: "center",
 });
 
-export const SubscribeButton = styled(Button)(({ theme }) => ({
+export const SubscribeButton = styled(Button)({
   transition: "transform 0.3s ease",
   "&:hover": {
     transform: "scale(1.25)",
   },
-}));
+});
