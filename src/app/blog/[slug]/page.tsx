@@ -4,7 +4,9 @@ import {
   Section,
   SectionTitle,
   Paragraph,
-  BlogImage
+  BlogImage,
+  BulletItem,
+  BulletList,
 } from "@/components/styled/Blog";
 
 type Params = Promise<{ slug: string }>;
@@ -48,11 +50,9 @@ export default async function BlogPost(props: { params: Params }) {
     SectionTitle,
     Paragraph,
     BlogImage,
+    BulletItem,
+    BulletList,
   });
 
-  return (
-    <BlogContainer>
-      {content}
-    </BlogContainer>
-  );
+  return <BlogContainer>{content}</BlogContainer>;
 }

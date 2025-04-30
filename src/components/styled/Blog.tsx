@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 export const BlogContainer = styled('div')({
   maxWidth: '800px',
   margin: '0 auto',
-  padding: '2rem',
+  padding: '0rem',
   lineHeight: 1.75,
   color: '#1a1a1a',
 });
@@ -17,16 +17,17 @@ export const Section = styled('section')({
 });
 
 // Section headings
-export const SectionTitle = styled('h2')({
+export const SectionTitle = styled('h2')(({ theme }) => ({
   fontSize: '1.75rem',
   fontWeight: 600,
   marginBottom: '1rem',
-});
+  color: theme.palette.primary.main
+}));
 
 // Regular paragraph
 export const Paragraph = styled('div')({
   marginBottom: '1rem',
-  fontSize: '1.05rem',
+  fontSize: '1.25rem',
   lineHeight: 1.75,
 });
 
@@ -39,6 +40,7 @@ export const BulletList = styled('ul')({
 // Bullet point
 export const BulletItem = styled('li')({
   marginBottom: '0.5rem',
+  fontSize: '1.25rem'
 });
 
 // Table
