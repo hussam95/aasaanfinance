@@ -23,10 +23,10 @@ export async function generateMetadata(props: { params: Params }) {
       title,
       description,
       type: "article",
-      url: `https://aasaanfinance.com/blog/${slug}`,
+      url: `https://www.aasaanfinance.com/blog/${slug}`,
       images: [
         {
-          url: `https://aasaanfinance.com/blog-imgs/${slug}.png`,
+          url: `https://www.aasaanfinance.com/blog-imgs/${slug}.png`,
           width: 1200,
           height: 630,
           alt: title,
@@ -37,7 +37,7 @@ export async function generateMetadata(props: { params: Params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [`https://aasaanfinance.com/blog-imgs/${slug}.png`],
+      images: [`https://www.aasaanfinance.com/blog-imgs/${slug}.png`],
     },
   };
 }
