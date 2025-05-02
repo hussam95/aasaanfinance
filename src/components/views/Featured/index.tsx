@@ -17,7 +17,7 @@ export const featuredBlogs = [
   {
     title: "Understanding Bitcoin and Crypto",
     description: "Crypto simplified — what it is, how it works, and what risks to understand before investing.",
-    link: "/blog/understanding-bitcoin",
+    link: "/blog/what-is-crypto",
   },
 ];
 
