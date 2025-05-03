@@ -27,7 +27,9 @@ export const getPostsByCategory = (category: string): BlogFrontmatter[] => {
       return data as BlogFrontmatter;
     })
     .filter((data) =>
-      data.tags?.map((tag) => tag.toLowerCase()).includes(category.toLowerCase())
+      data.tags
+        ?.map((tag) => tag.toLowerCase())
+        .includes(category.toLowerCase())
     );
 };
 export const getAllPostsSortedByDate = (): BlogFrontmatter[] => {
@@ -46,7 +48,19 @@ export const getAllPostsSortedByDate = (): BlogFrontmatter[] => {
       return data as BlogFrontmatter;
     })
     .filter((data) => !!data.date)
-    .sort(
-      (a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime()
-    );
+    .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime());
+};
+
+export const getAllPosts = (): BlogFrontmatter[] => {
+  const blogDir = path.join(process.cwd(), "src/app/blog");
+  if (!fs.existsSync(blogDir)) return [];
+
+  return fs
+    .readdirSync(blogDir)
+    .filter((file) => file.endsWith(".mdx"))
+    .map((file) => {
+      const content = fs.readFileSync(path.join(blogDir, file), "utf8");
+      const { data } = matter(content);
+      return data as BlogFrontmatter;
+    });
 };
