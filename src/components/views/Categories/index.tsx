@@ -2,7 +2,6 @@
 
 import { Typography } from "@mui/material";
 import * as S from "./styles";
-import Link from "next/link";
 import {
   ShowChart,
   AccountBalance,
@@ -29,7 +28,7 @@ const CategoriesPage = () => {
       </S.HeroSection>
 
       {/* Stocks */}
-      <Link href="/stocks" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/stocks" style={{ textDecoration: "none" }}>
         <S.SectionWrapper>
           <S.IconWrapper>
             <ShowChart fontSize="large" />
@@ -46,10 +45,10 @@ const CategoriesPage = () => {
             building a portfolio — in our upcoming blogs.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Crypto */}
-      <Link href="/crypto" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/crypto" style={{ textDecoration: "none" }}>
         <S.SectionWrapper gray>
           <S.IconWrapper>
             <CurrencyBitcoin fontSize="large" />
@@ -66,10 +65,10 @@ const CategoriesPage = () => {
             you make informed decisions.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Mutual Funds */}
-      <Link href="/mutual-funds" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/mutual-funds" style={{ textDecoration: "none" }}>
         <S.SectionWrapper>
           <S.IconWrapper>
             <AccountBalance fontSize="large" />
@@ -86,10 +85,10 @@ const CategoriesPage = () => {
             mutual funds for every type of investor.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Bonds */}
-      <Link href="/bonds" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/bonds" style={{ textDecoration: "none" }}>
         <S.SectionWrapper gray>
           <S.IconWrapper>
             <MonetizationOn fontSize="large" />
@@ -107,10 +106,10 @@ const CategoriesPage = () => {
             stable growth.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Gold */}
-      <Link href="/gold" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/gold" style={{ textDecoration: "none" }}>
         <S.SectionWrapper>
           <S.IconWrapper>
             <Savings fontSize="large" />
@@ -128,10 +127,10 @@ const CategoriesPage = () => {
             smartly.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Property / Real Estate */}
-      <Link href="/property" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/property" style={{ textDecoration: "none" }}>
         <S.SectionWrapper gray>
           <S.IconWrapper>
             <HomeWork fontSize="large" />
@@ -154,10 +153,10 @@ const CategoriesPage = () => {
             harms both you and the economy.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Foreign Investment */}
-      <Link href="/foreign-investment" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/foreign-investment" style={{ textDecoration: "none" }}>
         <S.SectionWrapper>
           <S.IconWrapper>
             <Public fontSize="large" />
@@ -174,10 +173,10 @@ const CategoriesPage = () => {
             <b>S&P 500</b> from Pakistan — step-by-step.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
 
       {/* Forex */}
-      <Link href="/forex" style={{ textDecoration: "none" }}>
+      <S.StyledLink href="/forex" style={{ textDecoration: "none" }}>
         <S.SectionWrapper gray>
           <S.IconWrapper>
             <CurrencyExchange fontSize="large" />
@@ -195,7 +194,7 @@ const CategoriesPage = () => {
             risks and rewards of engaging in this fast-paced market.
           </Typography>
         </S.SectionWrapper>
-      </Link>
+      </S.StyledLink>
     </S.MainWrapper>
   );
 };

@@ -1,5 +1,6 @@
 import { styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
+import Link from 'next/link';
 
 export const MainWrapper = styled(Box)({
   display: 'flex',
@@ -30,6 +31,13 @@ export const HeroSection = styled(Box)(({ theme }) => ({
     padding: '2rem 1rem',
   },
 }));
+
+export const StyledLink = styled(Link)({
+    textDecoration: "none",
+    color: "inherit",
+    display: "block", // Important so it wraps full section
+  });
+  
 
 export const SectionWrapper = styled(Box, {
   shouldForwardProp: (prop) => prop !== 'gray',
