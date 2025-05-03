@@ -6,6 +6,7 @@ export const MainWrapper = styled(Box)({
   flexDirection: 'column',
   alignItems: 'center',
   overflowX: 'hidden',
+  paddingBottom: '2rem'
 });
 
 export const HeroSection = styled(Box)(({ theme }) => ({
