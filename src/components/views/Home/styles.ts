@@ -118,6 +118,8 @@ export const Category = styled(Box)(({ theme }) => ({
   transition: "background-color 0.3s, color 0.3s, letter-spacing 0.3s",
   textAlign: "center",
   fontWeight: 500,
+  color: theme.palette.text.primary,
+  textDecoration: "none",
 
   "&:hover": {
     backgroundColor: theme.palette.secondary.main,
@@ -127,19 +129,48 @@ export const Category = styled(Box)(({ theme }) => ({
 }));
 
 // Latest
-export const LatestContainer = styled(Box)({
-  marginTop: "1rem",
-  display: "flex",
-  flexDirection: "column",
-  gap: "1rem",
+export const LatestContainer = styled("div")({
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+  gap: "2rem",
+  padding: "0 1rem",
 });
 
-export const LatestItem = styled(Box)(({ theme }) => ({
+export const LatestItem = styled("div")({
+  backgroundColor: "#fff",
+  borderRadius: "12px",
   padding: "1rem",
-  background: theme.palette.background.paper,
-  boxShadow: theme.shadows[2],
-  borderRadius: "8px",
-}));
+  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+  display: "flex",
+  flexDirection: "column",
+  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+
+  "&:hover": {
+    transform: "translateY(-4px)",
+    boxShadow: "0 6px 16px rgba(0, 0, 0, 0.1)",
+  },
+
+  h3: {
+    fontSize: "1.2rem",
+    fontWeight: 600,
+    margin: "1rem 0 0.5rem",
+    color: "#333",
+  },
+
+  p: {
+    fontSize: "0.95rem",
+    color: "#555",
+    marginBottom: "1rem",
+  },
+
+  a: {
+    fontWeight: 500,
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+    },
+  },
+});
 
 // Newsletter
 export const NewsletterSection = styled(Box)({

@@ -5,8 +5,14 @@ import * as S from "./styles";
 import { featuredBlogs } from "../Featured";
 import theme from "@/theme";
 import Link from "next/link";
+import LatestSectionContent from "./Components/LatestSection";
+import { BlogFrontmatter } from "@/lib/getPosts";
 
-const HomePage = () => {
+interface Props {
+  latestPosts: BlogFrontmatter[];
+}
+
+const HomePage = ({ latestPosts }: Props) => {
   return (
     <S.MainWrapper>
       {/* Hero Section */}
@@ -57,7 +63,7 @@ const HomePage = () => {
               },
             }}
           >
-            Featured Insights
+            Featured
           </Typography>
         </Link>
 
@@ -115,69 +121,31 @@ const HomePage = () => {
               },
             }}
           >
-            Browse by Category
+            Categories
           </Typography>
         </Link>
         <S.CategoriesContainer>
-          <S.Category>Stocks</S.Category>
-          <S.Category>Crypto</S.Category>
-          <S.Category>Mutual Funds</S.Category>
-          <S.Category>Bonds</S.Category>
-          <S.Category>Gold</S.Category>
-          <S.Category>Property</S.Category>
-          <S.Category>Forex</S.Category>
-          <S.Category>Foreign Investment</S.Category>
+          {[
+            "stocks",
+            "crypto",
+            "mutual-funds",
+            "bonds",
+            "gold",
+            "property",
+            "forex",
+            "foreign-investment",
+          ].map((cat) => (
+            <Link key={cat} href={`/${cat}`} style={{ textDecoration: "none" }}>
+              <S.Category>
+                {cat.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+              </S.Category>
+            </Link>
+          ))}
         </S.CategoriesContainer>
       </S.Section>
 
       {/* Latest Updates */}
-      <S.Section>
-        <Link href="/latest" style={{ textDecoration: "none" }}>
-          <Typography
-            variant="h4"
-            align="center"
-            sx={{
-              color: theme.palette.primary.main,
-              position: "relative",
-              display: "inline-block",
-              mb: 2,
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                bottom: -2,
-                left: 0,
-                width: "100%",
-                height: "3px",
-                backgroundImage: `linear-gradient(270deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                backgroundSize: "200% auto",
-                animation: "gradientMove 2s linear infinite",
-                borderRadius: "4px",
-              },
-              "@keyframes gradientMove": {
-                "0%": {
-                  backgroundPosition: "0% 50%",
-                },
-                "100%": {
-                  backgroundPosition: "100% 50%",
-                },
-              },
-            }}
-          >
-            Latest Updates
-          </Typography>
-        </Link>
-        <S.LatestContainer>
-          <S.LatestItem>
-            <Typography variant="h6">Title</Typography>
-            <Typography variant="body2">Short description</Typography>
-          </S.LatestItem>
-          <S.LatestItem>
-            <Typography variant="h6">Title</Typography>
-            <Typography variant="body2">Continue Reading</Typography>
-          </S.LatestItem>
-        </S.LatestContainer>
-      </S.Section>
-
+      <LatestSectionContent posts={latestPosts}></LatestSectionContent>
       {/* Newsletter Signup */}
       <S.NewsletterSection>
         <Typography variant="h5" align="center">
