@@ -1,13 +1,13 @@
 import BlogSection from "@/components/views/BlogSection";
 import { getPostsByCategory } from "@/lib/getPosts";
+import type { BlogFrontmatter } from "@/lib/getPosts";
 
-export default async function DynamicCategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
-  const posts = getPostsByCategory(params.category);
-  return <BlogSection category={params.category} posts={posts} />;
+type Params = Promise<{ category: string }>;
+
+export default async function DynamicCategoryPage(props: { params: Params }) {
+  const { category } = await props.params;
+  const posts: BlogFrontmatter[] = await getPostsByCategory(category);
+  return <BlogSection category={category} posts={posts} />;
 }
 
 export async function generateStaticParams() {
