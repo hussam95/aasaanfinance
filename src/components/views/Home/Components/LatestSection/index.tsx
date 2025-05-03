@@ -12,7 +12,9 @@ export default function LatestSectionContent({
   return (
     <S.Section>
       <S.SectionTitleWrapper>
-        <S.SectionTitle>Latest</S.SectionTitle>
+        <Link href="/latest" style={{ textDecoration: "none" }}>
+          <S.SectionTitle>Latest</S.SectionTitle>
+        </Link>
       </S.SectionTitleWrapper>
       <S.LatestContainer>
         {posts.map((post) => (

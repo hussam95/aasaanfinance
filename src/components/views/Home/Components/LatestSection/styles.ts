@@ -3,7 +3,7 @@
 import { styled } from "@mui/material/styles";
 
 export const Section = styled("section")({
-  padding: "0rem 1rem",
+  padding: "0rem 1rem 2rem",
   maxWidth: "960px",
   margin: "0 auto",
 });
