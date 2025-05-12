@@ -7,8 +7,7 @@ export async function generateMetadata() {
   const defaultTitle = "Aasaan Finance | Simplifying Investments in Pakistan";
   const defaultDescription =
     "Explore the best investment opportunities in Pakistan with Aasaan Finance.";
-  const defaultImage =
-    "https://www.aasaanfinance.com/aasaanFinanceBranding.png";
+  const defaultImage = "/aasaanFinanceBranding.png";
   const defaultUrl = "https://www.aasaanfinance.com/";
 
   return {
@@ -44,7 +43,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        {/* Favicon */}
+        <link
+          rel="icon"
+          href="/favIcon.png"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link rel="apple-touch-icon" href="/favIcon.png" />
+      </head>
       <body
         style={{
           minHeight: "100vh",
