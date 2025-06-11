@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.aasaanfinance.com
+
+# Sitemaps
+Sitemap: https://www.aasaanfinance.com/sitemap.xml
