@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.aasaanfinance.com
+Host: https://aasaanfinance.com
 
 # Sitemaps
-Sitemap: https://www.aasaanfinance.com/sitemap.xml
+Sitemap: https://aasaanfinance.com/sitemap.xml
