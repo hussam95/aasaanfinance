@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://aasaanfinance.com',
+  siteUrl: 'https://www.aasaanfinance.com',
   generateRobotsTxt: true,              
   generateIndexSitemap: true,      
 };
