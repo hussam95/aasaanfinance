@@ -60,7 +60,10 @@ export const TableData = styled('td')({
 });
 
 export const BlogImage = styled('img')({
+  width: '100%',
   maxWidth: '100%',
   height: 'auto',
-  borderRadius: '8px',
+  display: 'block',
+  margin: '1rem auto',
+  objectFit: 'contain',
 });
