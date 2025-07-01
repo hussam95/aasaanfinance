@@ -30,7 +30,9 @@ export const getPostsByCategory = (category: string): BlogFrontmatter[] => {
       data.tags
         ?.map((tag) => tag.toLowerCase())
         .includes(category.toLowerCase())
-    );
+    )
+    .filter((data) => !!data.date)
+    .sort((a, b) => new Date(a.date!).getTime() - new Date(b.date!).getTime()); // oldest first
 };
 export const getAllPostsSortedByDate = (): BlogFrontmatter[] => {
   const postsDirectory = path.join(process.cwd(), "src/app/blog");

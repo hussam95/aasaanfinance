@@ -7,6 +7,10 @@ import {
   BlogImage,
   BulletItem,
   BulletList,
+  Table,
+  TableHead,
+  TableRow,
+  TableData,
 } from "@/components/styled/Blog";
 
 type Params = Promise<{ slug: string }>;
@@ -52,6 +56,10 @@ export default async function BlogPost(props: { params: Params }) {
     BlogImage,
     BulletItem,
     BulletList,
+    Table,
+    TableHead,
+    TableRow,
+    TableData,
   });
 
   return <BlogContainer>{content}</BlogContainer>;
