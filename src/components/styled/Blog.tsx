@@ -8,6 +8,7 @@ export const BlogContainer = styled('div')({
   padding: '0rem',
   lineHeight: 1.75,
   color: '#1a1a1a',
+  width:'100%',
 });
 
 export const Section = styled('section')({
